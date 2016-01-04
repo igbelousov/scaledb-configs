@@ -1,0 +1,6 @@
+slm_ip=192.168.0.110
+slm_port=43306
+scaledb_cas_config_ips = 192.168.0.101
+scaledb_cas_config_ports = 13306
+slm_debug_file=/var/log/scaledb/slm_info.log
+scaledb_slm_service_port=33306
