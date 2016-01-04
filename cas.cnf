@@ -11,40 +11,23 @@ scaledb_storage_cache_threads_index = 1
 scaledb_storage_cache_threads_data = 4
 scaledb_storage_cache_threads_blob = 1
 
-scaledb_cas_server_ips = 192.168.0.128
-scaledb_cas_server_ports = 15151
-scaledb_cas_server_service_ports= 35151
+scaledb_cas_server_ips = 192.168.0.101,192.168.0.102,192.168.0.103,192.168.0.104
+scaledb_cas_server_ports = 13306,13306,13306,13306
+scaledb_cas_server_service_ports= 33306,33306,33306,33306
 
 scaledb_buffer_size_index= 500M
 scaledb_buffer_size_data = 1000M
 scaledb_buffer_size_blob = 20M
 
 scaledb_max_analytics_area_size=1000M
+scaledb_hash_lookup_size = 50M
 
 scaledb_dead_lock_milliseconds = 3000
-
 scaledb_data_io_flags = 0
 scaledb_log_io_flags = 0
 
 scaledb_debug_file=/home/sdbuser/mycluster/tmp/cas_messages.txt
 
-scaledb_hash_lookup_size = 50M
-
-scaledb_log_file_max_size = 0
-scaledb_index_threads = 3
-
-#
 # in bytes
-#
-scaledb_file_extent_size = 1
 #scaledb_file_extent_size = 8388608
-
-#
-# in bytes
-#
-scaledb_ovf_file_extent_size = 1
 #scaledb_ovf_file_extent_size = 132120576
-
-scaledb_var_char_percentage=100
-cas_recovery_mode = low
-
